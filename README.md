@@ -1,5 +1,19 @@
 # pred_Energy
-Data Science project of energy consumption of non-residential buildings in San Francisco 
+
+# Prediction of energy consumption of daily energy demand and market price in Spain
+
+**July 2019**
+
+**Project Description:**
+
+We will use this dataset to analyse and predict the energy demand in Spain. Further we will look at the development of the daily market price. While this might sound easy, it is actually a quite hard task since the whole country undergoes a variety of seasonal (repetitive) and non-seasonal (discrete) flucutations, caused e.g. by weather seasons, by political events / decisions or societal influences.
+
+**Data Description:**
+
+This notebook deals with the analysis of a daily time series of electricity demand, generation and prices in Spain from 2014 to 2018. The data (including its documentation) is accessible through kaggle: https://www.kaggle.com/manualrg/spanish-electricity-market-demand-gen-price
+
+---
+
 
 ## Translation of column names
 
