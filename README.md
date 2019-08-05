@@ -1,8 +1,10 @@
-# pred_Energy
-
 # Prediction of energy consumption of daily energy demand and market price in Spain
 
+Data Science project of daily energy price and demand in Spain
+
 **July 2019**
+
+## Introduction
 
 **Project Description:**
 
@@ -12,10 +14,32 @@ We will use this dataset to analyse and predict the energy demand in Spain. Furt
 
 This notebook deals with the analysis of a daily time series of electricity demand, generation and prices in Spain from 2014 to 2018. The data (including its documentation) is accessible through kaggle: https://www.kaggle.com/manualrg/spanish-electricity-market-demand-gen-price
 
+## Approach
+
+After cleaning the dataset, I will visualize the daily energy demand for different days of the week, weeks of the year to gain knowledge about the different trends of energy demand.
+For this timeseries analysis I will use facebook's Prophet toolbox that is particulary interesting for timeseries with fluctations on different time-levels (seasonal, mothly, weekly etc.). 
+I will apply this technique to predict the daily energy demand and the market price for a period of one year ahead.
+
+## Results and Conlcusions
+
+The following trends of the energy demand were found:
+- the demand seems to be strongly influenced by the days of the week (drops on weekends)
+- during summer and winter, a higher energy demand was found, probably due to increased usage of air conditioning and heating during these periods
+- over the years 2014 to 2018, no substantial changes in energy demand were found
+
+In comparison, other trends were observed for the price development:
+- prices remained quite similar during different days of the week and weeks of the year
+- the main change of the market price was on a yearly timescale
+
+The prophet model did well to predict the energy demand (Mean Absolute Percentage Error: 4.6) that is influenced by weather (temperature, wind speed, precipitation, etc.) and the intensity of business and everyday activities (on-peak vs. off-peak hours, weekdays vs. weekends, holidays, etc.). However, this model did not work for the energy price (MAPE: 27.9). This could due to the fact that the energy price is influenced by economic mechanisms and fluctations also, e.g. stock market developments etc.
+
+
+
+
 ---
 
 
-## Translation of column names
+### Translation of column names
 
 **Demanda programada PBF total (MWh):** Schedulled Total Demand
 
