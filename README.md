@@ -1,6 +1,6 @@
 # Prediction of energy consumption of daily energy demand and market price in Spain
 
-Data Science project of daily energy price and demand in Spain
+Data Science project of daily energy price and demand in Spain. The implementation can be found here: https://github.com/ca-schumacher/pred_Energy/blob/master/data_analysis.ipynb
 
 **July 2019**
 
@@ -19,6 +19,10 @@ This notebook deals with the analysis of a daily time series of electricity dema
 After cleaning the dataset, I will visualize the daily energy demand for different days of the week, weeks of the year to gain knowledge about the different trends of energy demand.
 For this timeseries analysis I will use facebook's Prophet toolbox that is particulary interesting for timeseries with fluctations on different time-levels (seasonal, mothly, weekly etc.). 
 I will apply this technique to predict the daily energy demand and the market price for a period of one year ahead.
+
+## Modelling
+
+Open the Notebook (https://github.com/ca-schumacher/pred_Energy/blob/master/data_analysis.ipynb) to see the data analysis, modeling and predicted results.
 
 ## Results and Conlcusions
 
